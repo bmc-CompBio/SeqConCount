@@ -1,6 +1,6 @@
 ## SeqConCount
 
-This app counts contaminating sequences fastq files. It uses BLAST and the NCBI nucleotide database to find taxonomy/organism information for sequencing reads.
+This app counts contaminating sequences in fastq files. It uses BLAST and the NCBI nucleotide database to find taxonomy/organism information for sequencing reads.
 
 * Input: raw fast file
 * Output: plot about species occurrence
