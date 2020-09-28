@@ -8,7 +8,8 @@ This app counts contaminating sequences in fastq files. It uses BLAST and the NC
 ## Installation
 
 ### Download app
-* Create a new Rproject using version control in RStudio 
+* Download/clone repository
+* e.g. create a new Rproject using version control in RStudio 
 
 ### Setup BLAST
 * Download and extract BLAST
@@ -16,19 +17,21 @@ This app counts contaminating sequences in fastq files. It uses BLAST and the NC
 * Place ```blastn``` executable to the app directory
 
 ### Setup databases
-* Download the following databases
+* Download the following databases from the terminal:
 ```
 wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/nt*.gz
 wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
 wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/ref_viruses_rep_genomes.tar.gz
 wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/ref_prok_rep_genomes.*.tar.gz
 ```
-* Extract database files
-```for file in *.tar.gz; do tar -zxf "$file"; done```
+* Extract database files in the terminal:
+```
+for file in *.tar.gz; do tar -zxf "$file"; done
+```
 * Place database files to the app directory
 
 
-### Run app
+## Run app
 * Run app from RStudio
 
 
