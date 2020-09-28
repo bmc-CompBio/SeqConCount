@@ -80,18 +80,13 @@ shinyApp(
                     
                 progress$inc(1, detail = paste("blasting"))
                 
-                system(paste("/Users/tschauer/Tools/blastn -num_threads 16 -db",
+                system(paste("./blastn -num_threads 16 -db",
                              my_database,
                             "-query temp_file.fasta -task megablast -max_target_seqs 1  -evalue",
                             input$eval,
                             "-outfmt '6 qseqid sscinames evalue sseqid stitle' -out temp_file.blast"))
                 
-                # system(paste("~/Tools/blastn -num_threads 16 -db",
-                #              my_database,
-                #              "-query temp_file.fasta -task blastn-short -max_target_seqs 1  -evalue",
-                #              input$eval,
-                #              "-outfmt '6 qseqid sscinames evalue' -out temp_file.blast")) 
-
+                
                 if(file.exists("temp_file.blast")){
                     
                     if(file.size("temp_file.blast") != 0){
