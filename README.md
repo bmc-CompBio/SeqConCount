@@ -12,8 +12,11 @@ This app counts contaminating sequences in fastq files. It uses BLAST and the NC
 * e.g. create a new Rproject using version control in RStudio 
 
 ### Setup BLAST
-* Download and extract BLAST
-* Source: https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.29/
+* Download and extract BLAST (I ony tested on Mac)
+```
+wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.10.0/ncbi-blast-2.10.0+-x64-macosx.tar.gz
+tar -zxf ncbi-blast-2.10.0+-x64-macosx.tar.gz
+```
 * Place ```blastn``` executable to the app directory
 
 ### Setup databases
