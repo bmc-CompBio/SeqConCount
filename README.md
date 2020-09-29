@@ -37,6 +37,10 @@ for file in *.tar.gz; do tar -zxf "$file"; done
 ## Run app
 * Run app from RStudio
 
+## Example
+
+<img src="example.png" style="display: block; margin: auto auto auto 0;" />
+
 
 
 
